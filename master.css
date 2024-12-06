@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+  scroll-padding-top: 50px;
+  box-sizing: border-box;
+  
+ 
+}
+  
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(21, 20, 20, 0.393), rgba(118, 10, 10, 0.1)) ,url(./imgs/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    font-size: 72px;
+}
+
+
+header h2::after{
+    content:" ";
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes animation{
+      0%{content: " | ";}
+      2%{content: " D| ";}
+      4%{content: " Des| ";}
+      6%{content: " Desi| ";}
+      
+      8%{content: "Desig | ";}
+      10%{content: " Design| ";}
+      12%{content: " Designe| ";}
+      14%{content: " Designer| ";}
+    
+    }
+    
+    @media(max-width:768px)
+{
+  header h1{
+    font-size: 40px;
+  }
+  .card h1{
+    position: absolute;
+    text-align: center;
+    bottom: 30%;
+    left: 15px;
+    right: 15px;
+    line-height: 10px;
+    overflow: hidden;
+
+}
+
+}
+.about .container  {
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about ul{
+    list-style: none;
+}
+ul li span .name{
+    color: black;
+}
+.info-text h5{
+    position: relative;
+}
+.info-text h5::after{
+    width: 100px;
+    height: 3px;
+    background-color: blue;
+    content: "";
+    position: absolute;
+    top:100;
+    right: 100;
+}
+.Services h2{
+    font-size: 3rem;
+    
+}
+
+.Services h5 {
+    position: relative;
+}
+.Services h5::after{
+    width: 50px;
+    height: 10px;
+    background-color: blue;
+    content: "";
+    position: absolute;
+    /* top:0%; */
+    bottom: 100;
+    left: 50%;
+}
+.Services{
+    background-color: #F5F5F5;
+}
+.Services .item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.Services .item i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #0078FF;
+    opacity: 1;
+    transition: all 0.5s;
+  font-size: 40px;
+ 
+}
+.Services .item:hover i {
+    background-color: #0078FF; 
+   opacity: 0.5;
+   color: white;
+
+}
+.WORKS{
+    background-image: linear-gradient(to right, rgba(49, 14, 201, 0.785), rgba(10, 84, 245, 0.84) ),url(./DevFolio/DevFolio03.jpg);
+    /* height: 100vh; */
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    
+}
+.item-work i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+  font-size: 20px;
+flex-direction: column;
+}
+.Portfolio .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    
+   
+}
+.card .card-img-top img{
+    transition: all 1s 2s;
+    overflow: hidden;
+}
+
+.Portfolio .card img:hover{
+    transform: scale(1.2,1.5);
+}
+.carousel{
+    background-image: linear-gradient(to right, rgba(49, 14, 201, 0.785), rgba(10, 84, 245, 0.84) ),url(./DevFolio/DevFolio10.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+.carousel img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.card h1{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 15px;
+    right: 15px;
+    line-height: 10px;
+    overflow: hidden;
+
+}
+.card-footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media(max-width:768px)
+{
+  header h1{
+    font-size: 40px;
+  }
+  .card h1{
+    position: absolute;
+    text-align: center;
+    bottom:  50%;
+    left: 15px;
+    right: 15px;
+    line-height: 10px;
+    overflow: hidden;
+width: 100px;
+height: 50px;
+}
+}
+
+.last{
+    background-image: linear-gradient(to right, rgba(49, 14, 201, 0.785), rgba(10, 84, 245, 0.84) ),url(./DevFolio/DevFolio10.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.last h5 {
+    position: relative;
+}
+.last h5::after{
+    width: 100px;
+    height: 2px;
+    background-color: blue;
+    content: "";
+    position: absolute;
+    /* top:0%; */
+    top: 0%;
+    left:  1%;
+}
+.last .icons i{
+    width: 50px;
+    height: 50px ;
+    border-radius: 50%;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+@media(max-width:768px)
+{
+    .last {
+        height: 200vh;
+    }
+}
